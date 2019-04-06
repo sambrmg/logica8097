@@ -16,10 +16,10 @@ function salvarAluno(){
     
         document.querySelector("#nome").value = ""
         document.querySelector("#nota").value = ""
-        alert("aluno: " + nome + " inserido com sucesso")
-        montarTabela()
+        alert("O aluno: " + nome + " inserido com sucesso")
+        montarTabela();
     }else{
-        alert("informe um nome e uma nota")
+        alert("Informe um nome e uma nota")
     }
 }
 
