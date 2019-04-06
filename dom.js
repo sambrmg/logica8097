@@ -33,3 +33,16 @@ function montarTabela(){
     document.getElementById("linhaTabela").innerHTML = tbody
     document.getElementById("linhaTotal").innerHTML = "<tr><td>Total</td><td>"+ total +"</td></tr>";
 }
+
+function buscarNomeAluno(){
+    var procurarNome = document.querySelector("#procurarNome").value;
+    for(var i = 0; i < lista.length; i++ ){
+        var re = new RegExp(procurarNome, "i");
+        var res = re.exec(lista[i].nomeAluno);
+        if( res != null) {   
+            alert("existe o aluno "+ procurarNome + " na sala")
+        }else{
+            alert("nao existe o aluno informado")
+        }
+    }
+}
