@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minha pagina</title>
+    <style>
+    .exibir{
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="nome">
+    <input type="text" id="nota">
+    <input type="button" value="Salvar" onclick="salvarAluno()">
+
+    
+
+
+    <input type="text" id="procurarNome">
+    <input type="button" value="Buscar" onclick="buscarNomeAluno()">
+    <table border="1" class="exibir" id="tabelaAlunos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody id="linhaTabela">
+            
+        </tbody>
+        
+    </table>
+    <script src="buscar.js"></script>
+</body>
+
+</html>
